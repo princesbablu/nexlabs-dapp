@@ -1,0 +1,32 @@
+<svg
+  width="144"
+  height="1"
+  viewBox="0 0 144 1"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  style="opacity: 0.32;"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <line
+    opacity="0.32"
+    y1="0.75"
+    x2="144"
+    y2="0.75"
+    stroke="url(#paint0_linear_86_3529)"
+    stroke-width="0.5"
+  ></line>
+  <defs>
+    <linearGradient
+      id="paint0_linear_86_3529"
+      x1="130.047"
+      y1="1"
+      x2="128.741"
+      y2="-11.7084"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#0B1005" stop-opacity="0"></stop>
+      <stop offset="0.508612" stop-color="#84C036"></stop>
+      <stop offset="1" stop-color="#0A0F05" stop-opacity="0"></stop>
+    </linearGradient>
+  </defs>
+</svg>
