@@ -10,8 +10,12 @@ import { ApexOptions } from 'apexcharts';
 
 const InvestmentChart: React.FC = () => {
     const options: ApexOptions = {
-        // colors: ['#F7A35C', '#90ED7D', '#434348', '#7CB5EC', '#E4D354', '#F15C80', '#8085E9'],
-        colors: ['#3AC954'],
+        colors: ['#F7A35C', '#90ED7D', '#434348', '#7CB5EC', '#E4D354', '#F15C80', '#8085E9'],
+        plotOptions: {
+            bar: {
+                distributed: true
+            }
+        },
         labels: ['Blockchain Service', 'DeFi', 'CeFi', 'Blockchain Infrast....', 'NFT', 'GameFi', 'Social'],
         chart: {
             id: "basic-bar",
