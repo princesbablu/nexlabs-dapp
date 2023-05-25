@@ -12,13 +12,13 @@ export default () => {
                 <div className="pb-12 pt-11">
                     <p className="text-[34px] font-medium text-left text-white">Portfolio</p>
                 </div>
-                <div className="flex gap-[30px] items-stretch mb-10">
-                    <div className="w-[calc(33.33%-30px)]">
+                <div className="flex flex-wrap gap-[30px] items-stretch mb-10">
+                    <div className="w-full md:w-[calc(50%-30px)] xl:w-[calc(33.33%-30px)]">
                         <div className="w-full bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] rounded-xl p-px bg-animate">
                             <div className="bg-[#0B0F07] px-8 py-6 rounded-xl">
                                 <div className="relative flex items-center justify-start gap-4">
                                     <div>
-                                        <Image src={statIcon1} alt="" />
+                                        <Image width={0} height={0} src={statIcon1} alt="" />
                                     </div>
 
                                     <div className="flex flex-col items-start justify-start gap-2">
@@ -38,7 +38,7 @@ export default () => {
                                                 className="relative w-2 h-3"
                                                 preserveAspectRatio="none"
                                             >
-                                                <g clip-path="url(#clip0_86_4600)">
+                                                <g clipPath="url(#clip0_86_4600)">
                                                     <path
                                                         fillRule="evenodd"
                                                         clipRule="evenodd"
@@ -57,12 +57,12 @@ export default () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[calc(33.33%-30px)]">
+                    <div className="w-full md:w-[calc(50%-30px)] xl:w-[calc(33.33%-30px)]">
                         <div className="w-full bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] rounded-xl p-px bg-animate">
                             <div className="bg-[#0B0F07] px-8 py-6 rounded-xl">
                                 <div className="relative flex items-center justify-start gap-4">
                                     <div>
-                                        <Image src={statIcon2} alt="" />
+                                        <Image width={0} height={0} src={statIcon2} alt="" />
                                     </div>
 
                                     <div className="flex flex-col items-start justify-start gap-2">
@@ -79,7 +79,7 @@ export default () => {
                                                 className="relative w-3 h-3"
                                                 preserveAspectRatio="xMidYMid meet"
                                             >
-                                                <g clip-path="url(#clip0_86_4633)">
+                                                <g clipPath="url(#clip0_86_4633)">
                                                     <path
                                                         opacity="0.6"
                                                         d="M6.52686 11.9919C3.76536 11.9919 1.52686 9.75344 1.52686 6.99194C1.52686 4.23044 3.76536 1.99194 6.52686 1.99194C9.28836 1.99194 11.5269 4.23044 11.5269 6.99194C11.5269 9.75344 9.28836 11.9919 6.52686 11.9919ZM6.52686 10.9919C7.58772 10.9919 8.60514 10.5705 9.35528 9.82037C10.1054 9.07023 10.5269 8.05281 10.5269 6.99194C10.5269 5.93108 10.1054 4.91366 9.35528 4.16352C8.60514 3.41337 7.58772 2.99194 6.52686 2.99194C5.46599 2.99194 4.44857 3.41337 3.69843 4.16352C2.94828 4.91366 2.52686 5.93108 2.52686 6.99194C2.52686 8.05281 2.94828 9.07023 3.69843 9.82037C4.44857 10.5705 5.46599 10.9919 6.52686 10.9919ZM6.02686 4.49194H7.02686V5.49194H6.02686V4.49194ZM6.02686 6.49194H7.02686V9.49194H6.02686V6.49194Z"
@@ -103,7 +103,7 @@ export default () => {
                                                 className="relative w-2 h-3"
                                                 preserveAspectRatio="none"
                                             >
-                                                <g clip-path="url(#clip0_86_4637)">
+                                                <g clipPath="url(#clip0_86_4637)">
                                                     <path
                                                         fillRule="evenodd"
                                                         clipRule="evenodd"
@@ -122,12 +122,12 @@ export default () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[calc(33.33%-30px)]">
+                    <div className="w-full md:w-[calc(50%-30px)] xl:w-[calc(33.33%-30px)]">
                         <div className="w-full bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] rounded-xl p-px bg-animate">
                             <div className="bg-[#0B0F07] px-8 py-6 rounded-xl">
                                 <div className="relative flex items-center justify-start gap-4">
                                     <div>
-                                        <Image src={statIcon3} alt="" />
+                                        <Image width={0} height={0} src={statIcon3} alt="" />
                                     </div>
 
                                     <div className="flex flex-col items-start justify-start gap-2">
@@ -147,7 +147,7 @@ export default () => {
                                                 className="relative w-2 h-3"
                                                 preserveAspectRatio="none"
                                             >
-                                                <g clip-path="url(#clip0_86_4600)">
+                                                <g clipPath="url(#clip0_86_4600)">
                                                     <path
                                                         fillRule="evenodd"
                                                         clipRule="evenodd"
@@ -169,8 +169,8 @@ export default () => {
                 </div>
 
                 <div className="flex flex-wrap gap-6 mb-20">
-                    <div className="w-[calc(50%-24px)]">
-                        <div className="bg-[#12170C] p-8 rounded-xl">
+                    <div className="w-full lg:w-[calc(50%-24px)]">
+                        <div className="bg-[#12170C] px-2 md:px-4 xl:px-8 pt-8 pb-4 rounded-xl">
                             <p className="mb-6 w-full h-[18.55px] text-base font-bold text-center text-white">
                                 AUM By Tranches
                             </p>
@@ -178,8 +178,8 @@ export default () => {
                             <AssetChart />
                         </div>
                     </div>
-                    <div className="w-[calc(50%-24px)]">
-                        <div className="bg-[#12170C] p-8 rounded-xl">
+                    <div className="w-full lg:w-[calc(50%-24px)]">
+                        <div className="bg-[#12170C] px-2 md:px-4 xl:px-8 pt-8 pb-4 rounded-xl">
                             <p className="mb-6 w-full h-[18.55px] text-base font-bold text-center text-white">
                                 AUM By Tranches
                             </p>
@@ -187,8 +187,8 @@ export default () => {
                             <AssetChart />
                         </div>
                     </div>
-                    <div className="w-[calc(50%-24px)]">
-                        <div className="bg-[#12170C] p-8 rounded-xl">
+                    <div className="w-full lg:w-[calc(50%-24px)]">
+                        <div className="bg-[#12170C] px-2 md:px-4 xl:px-8 pt-8 pb-4 rounded-xl">
                             <p className="mb-6 w-full h-[18.55px] text-base font-bold text-center text-white">
                                 AUM By Tranches
                             </p>
@@ -196,8 +196,8 @@ export default () => {
                             <AssetChart />
                         </div>
                     </div>
-                    <div className="w-[calc(50%-24px)]">
-                        <div className="bg-[#12170C] p-8 rounded-xl">
+                    <div className="w-full lg:w-[calc(50%-24px)]">
+                        <div className="bg-[#12170C] px-2 md:px-4 xl:px-8 pt-8 pb-4 rounded-xl">
                             <p className="mb-6 w-full h-[18.55px] text-base font-bold text-center text-white">
                                 AUM By Tranches
                             </p>

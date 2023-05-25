@@ -47,7 +47,7 @@ const Analytics = () => {
                 <div className="rounded-[10px] bg-[#0b0f07] p-8 mb-10">
                     <p className="mb-8 text-2xl font-medium text-left text-white">Assets Overview</p>
                     <div className="flex flex-wrap gap-10">
-                        <div className="w-[calc(20%-40px)]">
+                        <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
                                     <Image src={astLogo1} alt="" />
@@ -63,7 +63,7 @@ const Analytics = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[calc(20%-40px)]">
+                        <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
                                     <Image src={astLogo2} alt="" />
@@ -77,7 +77,7 @@ const Analytics = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[calc(20%-40px)]">
+                        <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
                                     <Image src={astLogo3} alt="" />
@@ -91,7 +91,7 @@ const Analytics = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[calc(20%-40px)]">
+                        <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
                                     <Image src={astLogo4} alt="" />
@@ -105,7 +105,7 @@ const Analytics = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[calc(20%-40px)]">
+                        <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
                                     <Image src={astLogo5} alt="" />
@@ -119,7 +119,7 @@ const Analytics = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[calc(20%-40px)]">
+                        <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
                                     <Image src={astLogo6} alt="" />
@@ -133,7 +133,7 @@ const Analytics = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[calc(20%-40px)]">
+                        <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
                                     <Image src={astLogo7} alt="" />
@@ -147,7 +147,7 @@ const Analytics = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[calc(20%-40px)]">
+                        <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
                                     <Image src={astLogo8} alt="" />
@@ -161,7 +161,7 @@ const Analytics = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[calc(20%-40px)]">
+                        <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
                                     <Image src={astLogo9} alt="" />
@@ -180,11 +180,11 @@ const Analytics = () => {
 
                 <div className="rounded-[10px] bg-[#0b0f07] p-8 mb-16">
                     <p className="mb-8 text-2xl font-medium text-left text-white">Assets Allocation</p>
-                    <div className="flex w-full gap-8">
-                        <div className="w-[calc(41.66%-32px)]">
+                    <div className="flex flex-wrap w-full gap-8">
+                        <div className="w-full lg:w-[calc(41.66%-32px)]">
                             <InvestmentChart />
                         </div>
-                        <div className="w-[calc(59.33%-32px)]">
+                        <div className="w-full lg:w-[calc(59.33%-32px)]">
                             <p className="text-base text-left text-white">Most Performant Asset</p>
                             <AssetChart />
                         </div>

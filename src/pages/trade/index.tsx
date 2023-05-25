@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from 'react'
-// import SelectUI from '~/components/radix/SelectUI'
-// import TradeChart from '~/components/charts/TradeChart';
+import Selection from '~/components/Selection';
+import TradeChart from '~/components/charts/TradeChart';
 import PositionTable from '~/components/table/Position';
 import HistoryTable from '~/components/table/History';
 
@@ -113,14 +113,16 @@ const TradePage = () => {
             <div className="container">
                 <div className="flex flex-wrap items-stretch gap-6 mt-8">
                     <div className="w-full xl:w-[calc(66.66%-24px)]">
-                        <div className="rounded-2xl bg-[#0B0F07] p-8 h-full">
+                        <div className="rounded-2xl bg-[#0B0F07] p-4 lg:p-8 h-full">
                             <div className="flex items-center gap-6 mb-8">
-                                {/* <SelectUI /> */}
-                                <div className="flex rounded-full gap-2.5 bg-[#12160e] ml-auto">
-                                    <div className={`py-2 px-6 rounded-full ${selected === "1" ? 'bg-gradient-to-tl from-[#00adef] to-[#8ac640]' : ''}`} onClick={() => setSelected("1")}>24H</div>
-                                    <div className={`py-2 px-6 rounded-full ${selected === "2" ? 'bg-gradient-to-tl from-[#00adef] to-[#8ac640]' : ''}`} onClick={() => setSelected("2")}>1W</div>
-                                    <div className={`py-2 px-6 rounded-full ${selected === "3" ? 'bg-gradient-to-tl from-[#00adef] to-[#8ac640]' : ''}`} onClick={() => setSelected("3")}>1M</div>
-                                    <div className={`py-2 px-6 rounded-full ${selected === "4" ? 'bg-gradient-to-tl from-[#00adef] to-[#8ac640]' : ''}`} onClick={() => setSelected("4")}>1Y</div>
+                                <div className="z-20 relative">
+                                    <Selection />
+                                </div>
+                                <div className="flex flex-wrap rounded-3xl gap-2.5 bg-[#12160e] ml-auto">
+                                    <div className={`py-2 px-3 sm:px-6 cursor-pointer rounded-3xl ${selected === "1" ? 'bg-gradient-to-tl from-[#00adef] to-[#8ac640]' : ''}`} onClick={() => setSelected("1")}>24H</div>
+                                    <div className={`py-2 px-3 sm:px-6 cursor-pointer rounded-3xl ${selected === "2" ? 'bg-gradient-to-tl from-[#00adef] to-[#8ac640]' : ''}`} onClick={() => setSelected("2")}>1W</div>
+                                    <div className={`py-2 px-3 sm:px-6 cursor-pointer rounded-3xl ${selected === "3" ? 'bg-gradient-to-tl from-[#00adef] to-[#8ac640]' : ''}`} onClick={() => setSelected("3")}>1M</div>
+                                    <div className={`py-2 px-3 sm:px-6 cursor-pointer rounded-3xl ${selected === "4" ? 'bg-gradient-to-tl from-[#00adef] to-[#8ac640]' : ''}`} onClick={() => setSelected("4")}>1Y</div>
                                 </div>
                                 <div>
                                     <svg
@@ -146,7 +148,7 @@ const TradePage = () => {
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-2">
+                            <div className="flex flex-wrap items-center gap-2">
                                 <div className="inline-flex flex-col justify-center items-start min-w-[200px] gap-2.5 px-4 py-3 rounded-[32px] bg-[#18210f]">
                                     <div className="flex items-center justify-between gap-3 rounded-full">
                                         <div className="flex flex-col">
@@ -189,7 +191,7 @@ const TradePage = () => {
                                 </div>
                             </div>
 
-                            {/* <TradeChart /> */}
+                            <TradeChart />
                         </div>
                     </div>
                     <div className="w-full xl:w-[calc(33.33%-24px)]">
@@ -251,7 +253,7 @@ const TradePage = () => {
                                 </div>
                             </div>
 
-                            <div className="flex justify-between mb-4">
+                            <div className="flex flex-wrap gap-3 justify-between mb-4">
                                 <div className="flex items-center gap-2">
                                     <p className=" text-sm font-medium text-left text-[#ecf1f6]">Margin</p>
                                     <div className='relative cursor-pointer group'>
@@ -279,7 +281,7 @@ const TradePage = () => {
                                     </div>
                                 </div>
 
-                                <div className="flex justify-start items-start gap-2.5">
+                                <div className="flex flex-wrap justify-start items-start gap-2.5">
                                     <div className="flex justify-center items-center w-[42px] relative gap-2.5 px-2.5 py-[5px] rounded border-[0.5px] border-[#353535] hover:bg-[#353535] cursor-pointer">
                                         <p className="text-xs text-center text-[#d8dbd5]">10%</p>
                                     </div>
@@ -308,11 +310,11 @@ const TradePage = () => {
                                         <div className={`h-4 w-4 rounded-full bg-gradient-to-r from-[#00ADEF] to-[#8AC640] ${switcher ? 'ml-auto' : ''}`}></div>
                                     </div>
                                 </div>
-                                <div className="flex items-center self-stretch justify-between gap-8">
+                                <div className="flex flex-wrap sm:flex-nowrap items-center self-stretch justify-between gap-8">
                                     <div className="flex justify-start items-center w-full relative gap-2.5 pl-[9px] pr-[33px] py-2 rounded bg-[#1a1e16] border-[0.5px] border-[#353535]">
                                         <input type="text" placeholder="16.5" className="bg-transparent outline-none text-xs font-medium text-[#d8dbd5] w-full" />
                                     </div>
-                                    <div className="flex items-center justify-center gap-2">
+                                    <div className="flex flex-wrap sm:flex-nowrap items-center justify-center gap-2">
                                         <div className="cursor-pointer flex justify-center items-center flex-grow relative gap-2.5 px-4 py-2 rounded bg-[#1a1e16] border-[0.5px] border-[#353535]">
                                             <p className=" text-xs font-medium text-center text-[#d8dbd5]">1x</p>
                                         </div>

@@ -16,13 +16,13 @@ const Swap = () => {
         <>
             <div className="flex items-center justify-center min-h-screen py-20">
                 {/* SWAP */}
-                <div className={`bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] p-px rounded-2xl ${dialog === "1" ? '' : 'hidden'}`}>
+                <div className={`w-full mx-2 max-w-[432px] bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] p-px rounded-2xl ${dialog === "1" ? '' : 'hidden'}`}>
 
                     <div className="w-full h-full rounded-2xl bg-[#0b0f07] p-8">
-                        <div className="flex flex-col items-start justify-start gap-6">
-                            <div className="relative flex flex-col items-start justify-start gap-4">
-                                <div className="flex justify-between items-center  w-[372px]">
-                                    <div className="flex flex-col justify-start items-start  relative gap-[5px]">
+                        <div className="flex flex-col items-start justify-start gap-6 w-full">
+                            <div className="relative flex flex-col items-start justify-start gap-4 w-full">
+                                <div className="flex justify-between items-center w-full">
+                                    <div className="flex flex-col justify-start items-start relative gap-[5px]">
                                         <p className="text-xl font-bold text-left text-white ">Swap</p>
                                         <p className="text-xs text-left text-white opacity-70">
                                             Trade Tokens in an Instant
@@ -69,9 +69,8 @@ const Swap = () => {
                                     </div>
                                 </div>
                                 <svg
-                                    width={372}
+                                    width="100%"
                                     height={1}
-                                    viewBox="0 0 372 1"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                     className=" opacity-10"
@@ -88,120 +87,106 @@ const Swap = () => {
                                     />
                                 </svg>
                             </div>
-                            <div className="relative flex flex-col items-start justify-start gap-4">
+                            <div className="relative flex flex-col items-start justify-start gap-4 w-full">
                                 {/* SWAP 1 */}
                                 {swap ?
-                                    <div className=" w-[372px] h-[51px]">
-                                        <div className="w-[372px] h-[51px] absolute left-[-0.5px] top-[-0.5px] rounded-lg bg-[#12160e] border border-[#7bc150]/10" />
-                                        <input type="text" className="absolute left-[15.5px] top-[17.5px] text-[13px] font-medium text-[#ecf1f6] bg-transparent outline-none" placeholder="0.0" />
+                                    <div className="px-4 pr-2 flex items-center w-full h-[51px] rounded-lg bg-[#12160e] border border-[#7bc150]/10">
+                                        <input type="text" className="w-full text-[13px] font-medium text-[#ecf1f6] bg-transparent outline-none" placeholder="0.0" />
                                     </div> :
-                                    <div className="w-[372px] h-[51px]">
-                                        <div className="w-[372px] h-[51px] absolute left-[-0.5px] top-[-0.5px] rounded-lg bg-[#12160e] border border-[#7bc150]/10" />
-                                        <input type="text" className="absolute left-[15.5px] top-[17.5px] text-[13px] font-medium text-[#ecf1f6] bg-transparent outline-none" placeholder="0.0" />
-                                        <div className="w-[95px] h-6">
-                                            <div className="flex justify-start items-center absolute left-[266.5px] top-[13.5px] gap-[3px]">
-                                                <div className="relative flex items-center justify-start gap-1">
-                                                    <Image
-                                                        src={usdc}
-                                                        alt=""
-                                                        className="w-[18px] h-[18px] object-cover"
-                                                    />
-                                                    <p className="text-base font-semibold text-left text-white ">
-                                                        USDC
-                                                    </p>
-                                                </div>
-                                                <svg
-                                                    width={25}
-                                                    height={25}
-                                                    viewBox="0 0 25 25"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    className="relative w-6 h-6"
-                                                    preserveAspectRatio="xMidYMid meet"
-                                                >
-                                                    <path
-                                                        d="M12.5 16.213L18.51 10.203L17.097 8.78802L12.5 13.388L7.90399 8.78802L6.48999 10.202L12.5 16.213Z"
-                                                        fill="white"
-                                                    />
-                                                </svg>
+                                    <div className="px-4 pr-2 flex items-center w-full h-[51px] rounded-lg bg-[#12160e] border border-[#7bc150]/10">
+                                        <input type="text" className="w-full text-[13px] font-medium text-[#ecf1f6] bg-transparent outline-none" placeholder="0.0" />
+                                        <div className="flex gap-2 h-6">
+                                            <div className="relative flex items-center justify-start gap-2 mr-2">
+                                                <Image
+                                                    src={usdc}
+                                                    alt=""
+                                                    className="w-[18px] h-[18px] object-cover"
+                                                />
+                                                <p className="text-base font-semibold text-left text-white ">
+                                                    USDC
+                                                </p>
                                             </div>
+                                            <svg
+                                                width={25}
+                                                height={25}
+                                                viewBox="0 0 25 25"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className="relative w-6 h-6"
+                                                preserveAspectRatio="xMidYMid meet"
+                                            >
+                                                <path
+                                                    d="M12.5 16.213L18.51 10.203L17.097 8.78802L12.5 13.388L7.90399 8.78802L6.48999 10.202L12.5 16.213Z"
+                                                    fill="white"
+                                                />
+                                            </svg>
                                         </div>
                                     </div>
                                 }
                                 {/* SWAP 1 */}
 
-                                <div className="relative flex flex-col items-start justify-start gap-4">
-                                    <svg
-                                        width={372}
-                                        height={35}
-                                        viewBox="0 0 372 35"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-[372px] h-[35px] cursor-pointer"
-                                        preserveAspectRatio="none"
-                                        onClick={() => setSwap(!swap)}
-                                    >
-                                        <line
-                                            x1="0.49931"
-                                            y1="17.4994"
-                                            x2="371.499"
-                                            y2="16.9877"
-                                            stroke="#B4B4B4"
-                                            strokeOpacity="0.06"
-                                            strokeLinecap="round"
-                                        />
-                                        <circle cx={186} cy="17.5" r="17.5" transform="rotate(90 186 17.5)" fill="#242820" />
-                                        <g clipPath="url(#clip0_86_5818)">
-                                            <path
-                                                d="M186.5 14.6438L189.8 11.3438L193.1 14.6438L192.157 15.5865L190.466 13.8958L190.467 22.6771L189.133 22.6771L189.133 13.8958L187.443 15.5865L186.5 14.6438ZM179.833 20.0438L180.776 19.1011L182.467 20.7918L182.467 12.0105L183.8 12.0105L183.8 20.7918L185.491 19.1011L186.433 20.0438L183.133 23.3438L179.833 20.0438V20.0438Z"
-                                                fill="#82C449"
-                                            />
-                                        </g>
-                                    </svg>
-                                    <div className="relative flex flex-col items-start justify-start gap-6">
+                                <div className="relative w-full flex flex-col items-start justify-start gap-4">
+                                    <div className="relative h-px w-full my-4">
+                                        <svg
+                                            width={36}
+                                            height={35}
+                                            viewBox="0 0 36 35"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35px] h-[35px]"
+                                            preserveAspectRatio="xMidYMid meet"
+                                            onClick={() => setSwap(!swap)}
+                                        >
+                                            <circle cx={18} cy="17.5" r="17.5" transform="rotate(90 18 17.5)" fill="#242820" />
+                                            <g clipPath="url(#clip0_86_5821)">
+                                                <path
+                                                    d="M18.4999 14.6438L21.7999 11.3438L25.0999 14.6438L24.1573 15.5865L22.4659 13.8958L22.4666 22.6771L21.1333 22.6771L21.1333 13.8958L19.4426 15.5865L18.4999 14.6438ZM11.8333 20.0438L12.7759 19.1011L14.4666 20.7918L14.4666 12.0105L15.7999 12.0105L15.7999 20.7918L17.4906 19.1011L18.4333 20.0438L15.1333 23.3438L11.8333 20.0438Z"
+                                                    fill="#82C449"
+                                                />
+                                            </g>
+                                        </svg>
+                                    </div>
+
+                                    <div className="relative w-full flex flex-col items-start justify-start gap-6">
                                         {/* SWAP 2 */}
                                         {swap ?
-                                            <div className="w-[372px] h-[51px]">
-                                                <div className="w-[372px] h-[51px] absolute left-[-0.5px] top-[-0.5px] rounded-lg bg-[#12160e] border border-[#7bc150]/10" />
-                                                <input type="text" className="absolute left-[15.5px] top-[17.5px] text-[13px] font-medium text-[#ecf1f6] bg-transparent outline-none" placeholder="0.0" />
-                                                <div className="w-[95px] h-6">
-                                                    <div className="flex justify-start items-center absolute left-[266.5px] top-[13.5px] gap-[3px]">
-                                                        <div className="relative flex items-center justify-start gap-1">
-                                                            <Image
-                                                                src={usdc}
-                                                                alt=""
-                                                                className="w-[18px] h-[18px] object-cover"
-                                                            />
-                                                            <p className="text-base font-semibold text-left text-white ">
-                                                                USDC
-                                                            </p>
-                                                        </div>
-                                                        <svg
-                                                            width={25}
-                                                            height={25}
-                                                            viewBox="0 0 25 25"
-                                                            fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            className="relative w-6 h-6"
-                                                            preserveAspectRatio="xMidYMid meet"
-                                                        >
-                                                            <path
-                                                                d="M12.5 16.213L18.51 10.203L17.097 8.78802L12.5 13.388L7.90399 8.78802L6.48999 10.202L12.5 16.213Z"
-                                                                fill="white"
-                                                            />
-                                                        </svg>
+                                            <div className="px-4 pr-2 flex items-center w-full h-[51px] rounded-lg bg-[#12160e] border border-[#7bc150]/10">
+                                                <input type="text" className="w-full text-[13px] font-medium text-[#ecf1f6] bg-transparent outline-none" placeholder="0.0" />
+                                                <div className="flex gap-2 h-6">
+                                                    <div className="relative flex items-center justify-start gap-2 mr-2">
+                                                        <Image
+                                                            src={usdc}
+                                                            alt=""
+                                                            className="w-[18px] h-[18px] object-cover"
+                                                        />
+                                                        <p className="text-base font-semibold text-left text-white ">
+                                                            USDC
+                                                        </p>
                                                     </div>
+                                                    <svg
+                                                        width={25}
+                                                        height={25}
+                                                        viewBox="0 0 25 25"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        className="relative w-6 h-6"
+                                                        preserveAspectRatio="xMidYMid meet"
+                                                    >
+                                                        <path
+                                                            d="M12.5 16.213L18.51 10.203L17.097 8.78802L12.5 13.388L7.90399 8.78802L6.48999 10.202L12.5 16.213Z"
+                                                            fill="white"
+                                                        />
+                                                    </svg>
                                                 </div>
                                             </div> :
-                                            <div className=" w-[372px] h-[51px]">
-                                                <div className="w-[372px] h-[51px] absolute left-[-0.5px] top-[-0.5px] rounded-lg bg-[#12160e] border border-[#7bc150]/10" />
-                                                <input type="text" className="absolute left-[15.5px] top-[17.5px] text-[13px] font-medium text-[#ecf1f6] bg-transparent outline-none" placeholder="0.0" />
+                                            <div className="px-4 pr-2 flex items-center w-full h-[51px] rounded-lg bg-[#12160e] border border-[#7bc150]/10">
+                                                <input type="text" className="w-full text-[13px] font-medium text-[#ecf1f6] bg-transparent outline-none" placeholder="0.0" />
                                             </div>
                                         }
                                         {/* SWAP 2 END */}
 
-                                        <div className="flex flex-col justify-start items-start  gap-[41px]">
-                                            <div className="flex justify-between items-center  w-[368.39px] relative">
+                                        <div className="flex w-full flex-col justify-start items-start gap-[41px]">
+                                            <div className="flex justify-between items-center w-full relative">
                                                 <p className="self-stretch  w-[164.39px] h-[19px] text-[13px] font-medium text-left text-[#ecf1f6]">
                                                     Slippage Tolerance
                                                 </p>
@@ -209,7 +194,7 @@ const Swap = () => {
                                                     0.5%
                                                 </p>
                                             </div>
-                                            <div className="flex justify-center items-center  w-[372px] relative gap-2.5 px-[30px] py-[15px] rounded-lg bg-gradient-to-tl from-[#00adef] to-[#8ac640] cursor-pointer">
+                                            <div className="flex justify-center items-center  w-full relative gap-2.5 px-[30px] py-[15px] rounded-lg bg-gradient-to-tl from-[#00adef] to-[#8ac640] cursor-pointer">
                                                 <p className="text-base font-bold text-left text-white ">
                                                     Connect Wallet
                                                 </p>
@@ -219,16 +204,16 @@ const Swap = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
 
                 {/* SETTINGS */}
-                <div className={`bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] p-px rounded-2xl ${dialog === "2" ? '' : 'hidden'}`}>
+                <div className={`w-full max-w-[432px] bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] p-px rounded-2xl ${dialog === "2" ? '' : 'hidden'}`}>
                     <div className="flex flex-col justify-start items-start gap-2.5 px-[26px] py-8 rounded-2xl bg-[#0b0f07]">
-                        <div className="flex flex-col justify-center items-start  h-[134px] gap-6">
+                        <div className="flex flex-col justify-center items-start w-full h-[134px] gap-6">
                             <div className="relative flex flex-col items-start self-stretch justify-start gap-3">
-                                <div className="flex justify-between items-center  w-[367px]">
+                                <div className="flex justify-between items-center w-full">
                                     <div className="flex flex-col justify-start items-start  relative gap-[5px]">
                                         <p className="text-lg font-bold text-left text-white ">
                                             Setting
@@ -257,9 +242,8 @@ const Swap = () => {
                                     </div>
                                 </div>
                                 <svg
-                                    width={368}
+                                    width="100%"
                                     height={1}
-                                    viewBox="0 0 368 1"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                     className=" opacity-10"
@@ -337,18 +321,18 @@ const Swap = () => {
                 </div>
 
                 {/* TRANSACTION */}
-                <div className={`bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] p-px rounded-2xl ${dialog === "3" ? '' : 'hidden'}`}>
-                    <div className="flex flex-col justify-start items-start h-[244px] gap-2.5 p-6 rounded-2xl bg-[#0b0f07]">
-                        <div className="flex flex-col items-center justify-center flex-grow-0 flex-shrink-0 gap-12">
-                            <div className="relative flex flex-col items-start justify-start flex-grow-0 flex-shrink-0 gap-4">
-                                <div className="flex justify-between items-center flex-grow-0 flex-shrink-0 w-[372px]">
-                                    <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-[5px]">
-                                        <p className="flex-grow-0 flex-shrink-0 text-lg font-bold text-left text-white">
+                <div className={`w-full max-w-[432px] bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] p-px rounded-2xl ${dialog === "3" ? '' : 'hidden'}`}>
+                    <div className="flex flex-col justify-start items-start gap-2.5 p-6 rounded-2xl bg-[#0b0f07]">
+                        <div className="flex w-full flex-col items-center justify-center gap-12">
+                            <div className="relative w-full flex flex-col items-start justify-start gap-4">
+                                <div className="flex justify-between items-center w-full">
+                                    <div className="flex flex-col justify-start items-start relative gap-[5px]">
+                                        <p className="text-lg font-bold text-left text-white">
                                             Recent Transaction
                                         </p>
                                     </div>
-                                    <div className="relative flex items-start justify-start flex-grow-0 flex-shrink-0 gap-2">
-                                        <div className="flex-grow-0 flex-shrink-0 w-[35px] h-[35px]" onClick={() => setDialog("1")}>
+                                    <div className="relative flex items-start justify-start gap-2">
+                                        <div className="w-[35px] h-[35px]" onClick={() => setDialog("1")}>
                                             <svg
                                                 width={35}
                                                 height={35}
@@ -370,12 +354,11 @@ const Swap = () => {
                                     </div>
                                 </div>
                                 <svg
-                                    width={372}
+                                    width="100%"
                                     height={1}
-                                    viewBox="0 0 372 1"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="flex-grow-0 flex-shrink-0 opacity-10"
+                                    className="opacity-10"
                                     preserveAspectRatio="xMidYMid meet"
                                 >
                                     <line
@@ -389,8 +372,8 @@ const Swap = () => {
                                     />
                                 </svg>
                             </div>
-                            <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[372px] relative gap-2.5 px-[30px] py-[15px] rounded-lg bg-gradient-to-tl from-[#00adef] to-[#8ac640] cursor-pointer">
-                                <p className="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">
+                            <div className="flex justify-center items-center w-full relative gap-2.5 px-[30px] py-[15px] rounded-lg bg-gradient-to-tl from-[#00adef] to-[#8ac640] cursor-pointer">
+                                <p className="text-base font-bold text-left text-white">
                                     Connect Wallet
                                 </p>
                             </div>

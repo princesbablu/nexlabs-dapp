@@ -74,7 +74,7 @@ const HomeChart: React.FC = () => {
             series={series}
             type="area"
             width="100%"
-            height="450px"
+            height="400px"
         />
     );
 }
