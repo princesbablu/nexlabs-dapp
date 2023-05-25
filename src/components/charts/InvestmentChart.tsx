@@ -17,6 +17,9 @@ const InvestmentChart: React.FC = () => {
             }
         },
         labels: ['Blockchain Service', 'DeFi', 'CeFi', 'Blockchain Infrast....', 'NFT', 'GameFi', 'Social'],
+        legend: {
+            show: false
+        },
         chart: {
             id: "basic-bar",
             toolbar: {
