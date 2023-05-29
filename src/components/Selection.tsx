@@ -1,10 +1,9 @@
 import Image from 'next/image';
-import React, { useState } from 'react'
+import { useState } from 'react';
+
 import logo1 from '~/assets/cur-nex-logo.png';
 
-type Props = {}
-
-const Selection = (props: Props) => {
+const Selection = () => {
 
     const [text, setText] = useState("Nex");
     const [logo, setLogo] = useState(logo1);

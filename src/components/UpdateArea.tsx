@@ -1,10 +1,8 @@
-"use client"
-import React, { useState } from 'react'
-import upDp from '~/assets/up-dp.png';
+import { useState } from 'react'
 import Image from 'next/image';
-import HomeChart from './charts/HomeChart';
 
-import blur from '~/assets/blur/blur-top.svg';
+import upDp from '~/assets/up-dp.png';
+import HomeChart from './charts/HomeChart';
 
 const UpdateArea = () => {
 
@@ -14,7 +12,7 @@ const UpdateArea = () => {
     return (
         <div className="container relative z-10">
             <div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 -z-10">
-                <Image src={blur} alt="" />
+                <Image src="/blur/blur-top.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
             </div>
             <div className="lg:h-[150px] flex items-center px-7 py-8 rounded-xl bg-[#0B0F07]">
                 <div className="flex flex-wrap justify-between w-full">

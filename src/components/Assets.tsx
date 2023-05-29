@@ -1,67 +1,54 @@
-"use client"
-
 import Image from 'next/image';
 import Link from 'next/link';
+
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import blur from '~/assets/blur/blur-asset.svg';
-
-import assetIcon1 from '~/assets/asset-icon-1.svg';
-import assetIcon2 from '~/assets/asset-icon-2.svg';
-import assetIcon3 from '~/assets/asset-icon-3.svg';
-import assetIcon4 from '~/assets/asset-icon-4.svg';
-import assetIcon5 from '~/assets/asset-icon-5.svg';
-import assetIcon6 from '~/assets/asset-icon-6.svg';
-import assetIcon7 from '~/assets/asset-icon-7.svg';
-import assetIcon8 from '~/assets/asset-icon-8.svg';
-import assetLine from '~/assets/asset-line.svg';
-
 const listOfAsset = [
     {
-        icon: assetIcon1,
+        icon: "/home/icon-asset-1.png",
         title: "Cryptocurrencies",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon2,
+        icon: "/home/icon-asset-2.png",
         title: "Stocks",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon3,
+        icon: "/home/icon-asset-3.png",
         title: "Commodities",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon4,
+        icon: "/home/icon-asset-4.png",
         title: "NFTS",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon1,
+        icon: "/home/icon-asset-1.png",
         title: "Cryptocurrencies",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon2,
+        icon: "/home/icon-asset-2.png",
         title: "Stocks",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon3,
+        icon: "/home/icon-asset-3.png",
         title: "Commodities",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon4,
+        icon: "/home/icon-asset-4.png",
         title: "NFTS",
         sub: "Individual Assets",
         link: "",
@@ -70,49 +57,49 @@ const listOfAsset = [
 
 const listOfPre = [
     {
-        icon: assetIcon5,
+        icon: "/home/icon-asset-5.png",
         title: "Cryptocurrencies",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon6,
+        icon: "/home/icon-asset-6.png",
         title: "Stocks",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon7,
+        icon: "/home/icon-asset-7.png",
         title: "Commodities",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon8,
+        icon: "/home/icon-asset-8.png",
         title: "NFTS",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon5,
+        icon: "/home/icon-asset-5.png",
         title: "Cryptocurrencies",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon6,
+        icon: "/home/icon-asset-6.png",
         title: "Stocks",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon7,
+        icon: "/home/icon-asset-7.png",
         title: "Commodities",
         sub: "Individual Assets",
         link: "",
     },
     {
-        icon: assetIcon8,
+        icon: "/home/icon-asset-8.png",
         title: "NFTS",
         sub: "Individual Assets",
         link: "",
@@ -120,11 +107,10 @@ const listOfPre = [
 ]
 
 const Assets = () => {
-
     return (
         <div className="relative z-10 overflow-hidden">
             <div className="absolute top-0 left-0 -z-10">
-                <Image src={blur} alt="" />
+                <Image src="/blur/blur-asset.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
             </div>
             <div className="container relative z-10">
                 <div className="flex items-center justify-between pt-[60px] mb-10">
@@ -201,11 +187,11 @@ const Assets = () => {
                                         <div className="hover:bg-gradient-to-tl bg-[#0B0F07] from-[#00ADEF] to-[#8AC640] p-px rounded-lg hover:from-[#8ac640] hover:to-[#00adef]">
                                             <div className="min-h-[317px] rounded-lg bg-[#0B0F07] w-full pt-14 pb-8 flex flex-col items-center">
                                                 <div className="w-14 h-14 rounded bg-[#1b1f17] flex items-center justify-center mb-4">
-                                                    <Image src={el.icon} alt="" />
+                                                    <Image src={el.icon} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                                 </div>
                                                 <p className="text-xl font-bold text-center text-[#f6f9f3] mb-1">{el.title}</p>
                                                 <p className="opacity-70 text-sm text-center text-[#d8dbd5] mb-3">{el.sub}</p>
-                                                <Image src={assetLine} alt="" />
+                                                <div className="h-px w-1/4 mx-auto bg-gradient-to-r from-[#0B1005]/0 via-[#84C036] to-[#0B1005]/0 opacity-30"></div>
                                                 <div className="mt-auto">
                                                     <Link href={el.link} className="flex bg-gradient-to-tl bg-[#0B0F07] from-[#00ADEF] to-[#8AC640] p-px rounded cursor-pointer hover:from-[#8ac640] hover:to-[#00adef] overflow-hidden">
                                                         <p className="px-14 py-2 text-sm text-center bg-[#0B0F07] rounded">View</p>
@@ -296,11 +282,11 @@ const Assets = () => {
                                         <div className="hover:bg-gradient-to-tl bg-[#0B0F07] from-[#00ADEF] to-[#8AC640] p-px rounded-lg hover:from-[#8ac640] hover:to-[#00adef]">
                                             <div className="min-h-[317px] rounded-lg bg-[#0B0F07] w-full pt-14 pb-8 flex flex-col items-center">
                                                 <div className="w-14 h-14 rounded bg-[#1b1f17] flex items-center justify-center mb-4">
-                                                    <Image src={el.icon} alt="" />
+                                                    <Image src={el.icon} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                                 </div>
                                                 <p className="text-xl font-bold text-center text-[#f6f9f3] mb-1">{el.title}</p>
                                                 <p className="opacity-70 text-sm text-center text-[#d8dbd5] mb-3">{el.sub}</p>
-                                                <Image src={assetLine} alt="" />
+                                                <div className="h-px w-1/4 mx-auto bg-gradient-to-r from-[#0B1005]/0 via-[#84C036] to-[#0B1005]/0 opacity-30"></div>
                                                 <div className="mt-auto">
                                                     <Link href={el.link} className="flex bg-gradient-to-tl bg-[#0B0F07] from-[#00ADEF] to-[#8AC640] p-px rounded cursor-pointer hover:from-[#8ac640] hover:to-[#00adef] overflow-hidden">
                                                         <p className="px-14 py-2 text-sm text-center bg-[#0B0F07] rounded">View</p>

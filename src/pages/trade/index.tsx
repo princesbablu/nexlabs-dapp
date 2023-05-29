@@ -1,6 +1,8 @@
-"use client";
+import { useState } from 'react'
+import Image from 'next/image';
+import Head from 'next/head';
+import { type NextPage } from 'next';
 
-import React, { useState } from 'react'
 import Selection from '~/components/Selection';
 import TradeChart from '~/components/charts/TradeChart';
 import PositionTable from '~/components/table/Position';
@@ -8,9 +10,8 @@ import HistoryTable from '~/components/table/History';
 
 import q from '~/assets/q.png';
 import news1 from '~/assets/news-1.png';
-import Image from 'next/image';
 
-const TradePage = () => {
+const TradePage: NextPage = () => {
 
     const [selected, setSelected] = useState("1");
     const [toggle, setToggle] = useState("1");
@@ -21,6 +22,12 @@ const TradePage = () => {
 
     return (
         <>
+            <Head>
+                <title>Trade | Nexlabs Dapp</title>
+                <meta name="description" content="Swap Nex token for USDC" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <div className={`fixed top-0 left-0 z-50 items-center justify-center w-full h-full ${pop ? 'flex' : 'hidden'}`} onClick={() => setPop(false)}>
                 <div className="absolute top-0 left-0 w-full h-full bg-[#0B0F07]/80 blur-3xl"></div>
                 <div className="bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] p-px rounded-lg">
@@ -513,4 +520,4 @@ const TradePage = () => {
     )
 }
 
-export default TradePage
+export default TradePage;

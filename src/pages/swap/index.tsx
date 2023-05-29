@@ -1,19 +1,26 @@
-"use client"
-
-import Footer from '~/components/Footer'
-import React, { useState } from 'react'
+import { useState } from 'react'
+import Image from 'next/image';
+import Head from 'next/head';
+import { type NextPage } from 'next';
 
 import close from '~/assets/icon-close.png';
 import usdc from '~/assets/coin-usdc.png';
-import Image from 'next/image';
 
-const Swap = () => {
+import Footer from '../../components/Footer';
+
+const Swap: NextPage = () => {
 
     const [dialog, setDialog] = useState("1");
     const [swap, setSwap] = useState(false);
 
     return (
         <>
+            <Head>
+                <title>Swap | Nexlabs Dapp</title>
+                <meta name="description" content="Swap Nex token for USDC" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <div className="flex items-center justify-center min-h-screen py-20">
                 {/* SWAP */}
                 <div className={`w-full mx-2 max-w-[432px] bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] p-px rounded-2xl ${dialog === "1" ? '' : 'hidden'}`}>
@@ -381,6 +388,8 @@ const Swap = () => {
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }

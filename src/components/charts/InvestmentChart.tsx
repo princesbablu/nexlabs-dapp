@@ -1,12 +1,7 @@
-"use client"
-
-import React from 'react'
 import dynamic from 'next/dynamic'
-
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 import { ApexOptions } from 'apexcharts';
-
 
 const InvestmentChart: React.FC = () => {
     const options: ApexOptions = {
@@ -76,13 +71,6 @@ const InvestmentChart: React.FC = () => {
             data: [40, 30, 45, 35, 55, 40, 50]
         }
     ]
-    // const outsiders = [
-    //     {
-    //         data: [40, 30, 45, 35, 55, 40, 50],
-    //         colors: ['#F7A35C', '#90ED7D', '#434348', '#7CB5EC', '#E4D354', '#F15C80', '#8085E9'],
-    //         labels: ['Blockchain Service', 'DeFi', 'CeFi', 'Blockchain Infrast....', 'NFT', 'GameFi', 'Social'],
-    //     },
-    // ]
 
     return (
         <>

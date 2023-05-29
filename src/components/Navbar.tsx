@@ -1,18 +1,13 @@
-"use client"
-
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 
 import logo from '~/assets/logo.png';
 import curLogo from '~/assets/currency-logo.svg';
 import curLogo2 from '~/assets/currency-logo-2.png';
-
 import navIcon1 from '~/assets/nav-icon-1.svg';
 import navIcon2 from '~/assets/nav-icon-2.svg';
 import navIcon3 from '~/assets/nav-icon-3.svg';
-
-
 import navAngleRight from '~/assets/nav-angle-right.svg';
 
 import coinUsdc from '~/assets/coin-usdc.png';
@@ -43,14 +38,6 @@ const Navbar = () => {
             }
         }
     }
-
-    useEffect(() => {
-        // if (typeof document !== 'undefined') {
-        //     if (localStorage.theme === 'dark') {
-        //         console.log(localStorage.theme)
-        //     }
-        // }
-    }, [])
 
     return (
         <div className="relative z-50">
@@ -194,25 +181,25 @@ const Navbar = () => {
                                 <div className="absolute top-0 right-5 h-3 w-3 -translate-y-1/4 bg-[inherit] rotate-45"></div>
                                 <li className="flex gap-2.5">
                                     <div className="flex-shrink-0">
-                                        <Image src={coinUsdc} alt="" />
+                                        <Image src="/coin-usdc.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                     </div>
                                     <p className="text-sm font-medium text-left text-[#f6f9f3]">USD</p>
                                 </li>
                                 <li className="flex gap-2.5">
                                     <div className="flex-shrink-0">
-                                        <Image src={coinEth} alt="" />
+                                        <Image src="/coin-eth.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                     </div>
                                     <p className="text-sm font-medium text-left text-[#f6f9f3]">ETH</p>
                                 </li>
                                 <li className="flex gap-2.5">
                                     <div className="flex-shrink-0">
-                                        <Image src={coinBit} alt="" />
+                                        <Image src="/coin-bit.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                     </div>
                                     <p className="text-sm font-medium text-left text-[#f6f9f3]">BTC</p>
                                 </li>
                                 <li className="flex gap-2.5">
                                     <div className="flex-shrink-0">
-                                        <Image src={coinUsdc} alt="" />
+                                        <Image src="/coin-usdc.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                     </div>
                                     <p className="text-sm font-medium text-left text-[#f6f9f3]">USDC</p>
                                 </li>

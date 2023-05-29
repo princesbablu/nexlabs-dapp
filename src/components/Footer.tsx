@@ -1,15 +1,8 @@
-import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 
 import logo from '~/assets/logo.png';
-import social1 from '~/assets/social-icon-twitter.svg';
-import social2 from '~/assets/social-icon-discord.svg';
-import social3 from '~/assets/social-icon-paperplane.svg';
-import social4 from '~/assets/social-icon-medium.svg';
-import social5 from '~/assets/social-icon-linkedin.svg';
-import social6 from '~/assets/social-icon-book.svg';
-import social7 from '~/assets/social-icon-github.svg';
+import { Book, Discord, Github, Linkedin, Medium, Paperplane, Twitter } from './socials';
 
 const Footer = () => {
     return (
@@ -23,25 +16,25 @@ const Footer = () => {
                     <Image src={logo} alt="" />
                     <div className="flex flex-wrap justify-center gap-2 mt-8 lg:gap-7">
                         <Link href="/" className="flex items-center justify-center h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-[#191C14]">
-                            <Image src={social1} alt="" />
+                            <Twitter />
                         </Link>
                         <Link href="/" className="flex items-center justify-center h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-[#191C14]">
-                            <Image src={social2} alt="" />
+                            <Discord />
                         </Link>
                         <Link href="/" className="flex items-center justify-center h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-[#191C14]">
-                            <Image src={social3} alt="" />
+                            <Paperplane />
                         </Link>
                         <Link href="/" className="flex items-center justify-center h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-[#191C14]">
-                            <Image src={social4} alt="" />
+                            <Medium />
                         </Link>
                         <Link href="/" className="flex items-center justify-center h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-[#191C14]">
-                            <Image src={social5} alt="" />
+                            <Linkedin />
                         </Link>
                         <Link href="/" className="flex items-center justify-center h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-[#191C14]">
-                            <Image src={social6} alt="" />
+                            <Book />
                         </Link>
                         <Link href="/" className="flex items-center justify-center h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-[#191C14]">
-                            <Image src={social7} alt="" />
+                            <Github />
                         </Link>
                     </div>
                 </div>

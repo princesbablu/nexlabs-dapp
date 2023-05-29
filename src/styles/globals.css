@@ -35,6 +35,7 @@
 body {
     overflow-x: hidden;
     font-family: "Circular Std";
+    background-color: #040800;
 }
 
 .bg-animate {

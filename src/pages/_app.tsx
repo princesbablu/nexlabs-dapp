@@ -6,7 +6,6 @@ import Navbar from '~/components/Navbar'
 
 import "~/styles/globals.css";
 import "swiper/css"
-import Footer from "~/components/Footer";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -17,7 +16,6 @@ const MyApp: AppType<{ session: Session | null }> = ({
       <div className="bg-body text-white">
         <Navbar />
         <Component {...pageProps} />
-        <Footer />
       </div>
     </SessionProvider>
   );

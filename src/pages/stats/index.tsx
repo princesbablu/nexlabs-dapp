@@ -1,13 +1,24 @@
 import Image from "next/image"
+import Head from 'next/head';
+import { type NextPage } from "next";
+
 import statIcon1 from '~/assets/stat-icon-1.svg';
 import statIcon2 from '~/assets/stat-icon-2.svg';
 import statIcon3 from '~/assets/stat-icon-3.svg';
-import AssetChart from "~/components/charts/AssetChart";
-import Footer from "~/components/Footer";
 
-export default () => {
+import AssetChart from "../../components/charts/AssetChart";
+
+import Footer from "../../components/Footer";
+
+const stats: NextPage = () => {
     return (
         <>
+            <Head>
+                <title>Stats | Nexlabs Dapp</title>
+                <meta name="description" content="Swap Nex token for USDC" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <div className="container">
                 <div className="pb-12 pt-11">
                     <p className="text-[34px] font-medium text-left text-white">Portfolio</p>
@@ -207,6 +218,10 @@ export default () => {
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }
+
+export default stats;

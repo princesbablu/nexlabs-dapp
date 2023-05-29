@@ -1,8 +1,5 @@
-"use client"
-
-import React from 'react'
-import dynamic from 'next/dynamic'
-
+import Image from 'next/image';
+import dynamic from 'next/dynamic';
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 import { ApexOptions } from 'apexcharts';
@@ -10,8 +7,6 @@ import { ApexOptions } from 'apexcharts';
 import cbit from '~/assets/c-bit.png';
 import ct from '~/assets/c-t.png';
 import cpriz from '~/assets/c-priz.png';
-import Image from 'next/image';
-
 
 const ReportChart: React.FC = () => {
   const options: ApexOptions = {
@@ -122,15 +117,15 @@ const IndicesChart = () => {
           </div>
           <div className="flex items-start justify-start gap-1">
             <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-1 pl-0.5 pr-[5px] py-0.5 rounded-[40px] bg-[#7dc350]/30">
-              <Image className="flex-grow-0 flex-shrink-0" src={cbit} alt="" />
+              <Image className="flex-grow-0 flex-shrink-0" src="/c-bit.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
               <p className="text-[10px] font-medium text-center text-[#d8dbd5]">5%</p>
             </div>
             <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-1 pl-0.5 pr-[5px] py-0.5 rounded-[40px] bg-[#7dc350]/30">
-              <Image className="flex-grow-0 flex-shrink-0" src={ct} alt="" />
+              <Image className="flex-grow-0 flex-shrink-0" src="/c-t.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
               <p className="text-[10px] font-medium text-center text-[#d8dbd5]">5%</p>
             </div>
             <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-1 pl-0.5 pr-[5px] py-0.5 rounded-[40px] bg-[#7dc350]/30">
-              <Image className="flex-grow-0 flex-shrink-0" src={cpriz} alt="" />
+              <Image className="flex-grow-0 flex-shrink-0" src="/c-priz.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
               <p className="text-[10px] font-medium text-center text-[#d8dbd5]">7%</p>
             </div>
             <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-1 px-1 py-0.5 rounded-[40px] bg-[#7dc350]/30">

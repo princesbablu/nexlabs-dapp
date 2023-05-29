@@ -1,5 +1,3 @@
-import React from 'react'
-
 const data = [
     { time: '5 min ago', pair: 'BTC/USDC', side: "buy", executed: 178.50, fee: 0.906, fee_currency: 'USDC', total: 906.00, total_currency: 'USDC', total_price: 907.49, total_price_currency: 'BUSD' },
     { time: '10 min ago', pair: 'BTC/USDC', side: "sell", executed: 178.50, fee: 0.906, fee_currency: 'USDC', total: 906.00, total_currency: 'USDC', total_price: 907.49, total_price_currency: 'BUSD' },

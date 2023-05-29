@@ -1,15 +1,13 @@
-import React from 'react'
-import IndicesChart from './charts/IndicesChart'
-
-import blur from '~/assets/blur/blur-indices.svg';
 import Image from 'next/image';
+
+import IndicesChart from './charts/IndicesChart'
 
 const Indices = () => {
     return (
         <>
             <div className="relative z-10 mt-12">
                 <div className="absolute right-0 top-1/2 -z-10">
-                    <Image src={blur} alt="" />
+                    <Image src="/blur/blur-indices.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                 </div>
                 <div className="container">
                     <div className="flex flex-wrap items-center justify-between gap-5 mb-12">

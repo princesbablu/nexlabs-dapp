@@ -1,25 +1,26 @@
-'use client'
 import { useState } from 'react';
-import astLogo1 from '~/assets/analytics/asset-icon-1.svg';
-import astLogo2 from '~/assets/analytics/asset-icon-2.svg';
-import astLogo3 from '~/assets/analytics/asset-icon-3.svg';
-import astLogo4 from '~/assets/analytics/asset-icon-4.svg';
-import astLogo5 from '~/assets/analytics/asset-icon-5.png';
-import astLogo6 from '~/assets/analytics/asset-icon-6.svg';
-import astLogo7 from '~/assets/analytics/asset-icon-7.svg';
-import astLogo8 from '~/assets/analytics/asset-icon-8.svg';
-import astLogo9 from '~/assets/analytics/asset-icon-9.png';
-import AssetChart from '~/components/charts/AssetChart';
-import InvestmentChart from '~/components/charts/InvestmentChart';
-import PortfolioChart from '~/components/charts/PortfolioChart';
 import Image from 'next/image';
+import Head from 'next/head';
+import { type NextPage } from "next";
 
-const Analytics = () => {
+import AssetChart from '../../components/charts/AssetChart';
+import InvestmentChart from '../../components/charts/InvestmentChart';
+import PortfolioChart from '../../components/charts/PortfolioChart';
+
+import Footer from '../../components/Footer';
+
+const Analytics: NextPage = () => {
 
     const [timeCount, setTimeCount] = useState("1")
 
     return (
         <>
+            <Head>
+                <title>Analytics | Nexlabs Dapp</title>
+                <meta name="description" content="Swap Nex token for USDC" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <div className="container">
                 <div className="py-11">
                     <p className="text-[34px] font-medium text-left text-white">Portfolio</p>
@@ -49,8 +50,8 @@ const Analytics = () => {
                     <div className="flex flex-wrap gap-10">
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
-                                <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src={astLogo1} alt="" />
+                                <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
+                                    <Image src="/analytics/icon-asset-1.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -65,8 +66,8 @@ const Analytics = () => {
                         </div>
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
-                                <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src={astLogo2} alt="" />
+                                <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
+                                    <Image src="/analytics/icon-asset-2.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -79,8 +80,8 @@ const Analytics = () => {
                         </div>
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
-                                <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src={astLogo3} alt="" />
+                                <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
+                                    <Image src="/analytics/icon-asset-3.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -93,8 +94,8 @@ const Analytics = () => {
                         </div>
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
-                                <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src={astLogo4} alt="" />
+                                <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
+                                    <Image src="/analytics/icon-asset-4.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -107,8 +108,8 @@ const Analytics = () => {
                         </div>
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
-                                <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src={astLogo5} alt="" />
+                                <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
+                                    <Image src="/analytics/icon-asset-5.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -121,8 +122,8 @@ const Analytics = () => {
                         </div>
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
-                                <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src={astLogo6} alt="" />
+                                <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
+                                    <Image src="/analytics/icon-asset-6.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -135,8 +136,8 @@ const Analytics = () => {
                         </div>
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
-                                <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src={astLogo7} alt="" />
+                                <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
+                                    <Image src="/analytics/icon-asset-7.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -149,8 +150,8 @@ const Analytics = () => {
                         </div>
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
-                                <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src={astLogo8} alt="" />
+                                <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
+                                    <Image src="/analytics/icon-asset-8.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -163,8 +164,8 @@ const Analytics = () => {
                         </div>
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
-                                <div className="w-12 h-12 rounded bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src={astLogo9} alt="" />
+                                <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
+                                    <Image src="/analytics/icon-asset-9.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -191,6 +192,8 @@ const Analytics = () => {
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }
