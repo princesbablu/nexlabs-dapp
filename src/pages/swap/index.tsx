@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { type NextPage } from 'next';
 
 import close from '~/assets/icon-close.png';
-import usdc from '~/assets/coin-usdc.png';
 
 import Footer from '../../components/Footer';
 
@@ -105,8 +104,8 @@ const Swap: NextPage = () => {
                                         <div className="flex gap-2 h-6">
                                             <div className="relative flex items-center justify-start gap-2 mr-2">
                                                 <Image
-                                                    src={usdc}
-                                                    alt=""
+                                                    src="/coin-usdc.png"
+                                                    alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}
                                                     className="w-[18px] h-[18px] object-cover"
                                                 />
                                                 <p className="text-base font-semibold text-left text-white ">
@@ -162,8 +161,8 @@ const Swap: NextPage = () => {
                                                 <div className="flex gap-2 h-6">
                                                     <div className="relative flex items-center justify-start gap-2 mr-2">
                                                         <Image
-                                                            src={usdc}
-                                                            alt=""
+                                                            src="/coin-usdc.png"
+                                                            alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}
                                                             className="w-[18px] h-[18px] object-cover"
                                                         />
                                                         <p className="text-base font-semibold text-left text-white ">
