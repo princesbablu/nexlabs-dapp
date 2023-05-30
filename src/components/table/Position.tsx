@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import emptyData from '~/assets/empty-data.svg';
 
 const PositionTable = () => {
     return (
@@ -20,7 +19,7 @@ const PositionTable = () => {
                     <tr>
                         <td colSpan={7}>
                             <div className="flex justify-center h-full py-20">
-                                <Image src={emptyData} alt="" />
+                                <Image src="/empty-data.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                             </div>
                         </td>
                     </tr>

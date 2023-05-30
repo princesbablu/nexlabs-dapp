@@ -2,10 +2,6 @@ import Image from "next/image"
 import Head from 'next/head';
 import { type NextPage } from "next";
 
-import statIcon1 from '~/assets/stat-icon-1.svg';
-import statIcon2 from '~/assets/stat-icon-2.svg';
-import statIcon3 from '~/assets/stat-icon-3.svg';
-
 import AssetChart from "../../components/charts/AssetChart";
 
 import Footer from "../../components/Footer";
@@ -29,7 +25,7 @@ const stats: NextPage = () => {
                             <div className="bg-[#0B0F07] px-8 py-6 rounded-xl">
                                 <div className="relative flex items-center justify-start gap-4">
                                     <div>
-                                        <Image width={0} height={0} src={statIcon1} alt="" />
+                                        <Image src="/stat-icon-1.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                     </div>
 
                                     <div className="flex flex-col items-start justify-start gap-2">
@@ -73,7 +69,7 @@ const stats: NextPage = () => {
                             <div className="bg-[#0B0F07] px-8 py-6 rounded-xl">
                                 <div className="relative flex items-center justify-start gap-4">
                                     <div>
-                                        <Image width={0} height={0} src={statIcon2} alt="" />
+                                        <Image src="/stat-icon-2.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                     </div>
 
                                     <div className="flex flex-col items-start justify-start gap-2">
@@ -138,7 +134,7 @@ const stats: NextPage = () => {
                             <div className="bg-[#0B0F07] px-8 py-6 rounded-xl">
                                 <div className="relative flex items-center justify-start gap-4">
                                     <div>
-                                        <Image width={0} height={0} src={statIcon3} alt="" />
+                                        <Image src="/stat-icon-3.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                     </div>
 
                                     <div className="flex flex-col items-start justify-start gap-2">

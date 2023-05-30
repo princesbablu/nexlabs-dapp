@@ -8,9 +8,6 @@ import TradeChart from '~/components/charts/TradeChart';
 import PositionTable from '~/components/table/Position';
 import HistoryTable from '~/components/table/History';
 
-import q from '~/assets/q.png';
-import news1 from '~/assets/news-1.png';
-
 const TradePage: NextPage = () => {
 
     const [selected, setSelected] = useState("1");
@@ -433,13 +430,11 @@ const TradePage: NextPage = () => {
                                 </div>
                             </div>
                             <div className="px-4 py-8 bg-[#0B0F07]">
-                                <div className="flex flex-col">
+                                <div className="flex w-full flex-col">
                                     <div className="flex items-end justify-start gap-2 mb-2">
                                         <div className="relative flex items-center justify-start gap-2">
-                                            <div className="w-4 h-4">
-                                                <div className="w-4 h-4 absolute left-[-0.25px] top-[-0.25px] rounded-sm bg-[#3253dc]" />
-                                                <Image src={q} alt="" className="w-[6.95px] h-2 absolute left-[4.42px] top-[3.75px] object-cover"
-                                                />
+                                            <div className="w-4 h-4 rounded-sm bg-[#3253dc] flex items-center justify-center">
+                                                <Image src="/q.png" alt="" width={8} height={8} />
                                             </div>
                                             <p className="text-xs text-left text-white">16 hours ago</p>
                                         </div>
@@ -459,7 +454,7 @@ const TradePage: NextPage = () => {
                                         </div>
                                     </div>
                                     <div className="mb-4 cursor-pointer child-img:w-full">
-                                        <Image src={news1} alt="" />
+                                        <Image src="/news-1.png" alt="" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} />
                                     </div>
                                     <p className="text-base text-left text-[#f6f9f3]">
                                         QCOM: Qualcomm Set to Acquire Autotalks in Effort to Expand its Automotive Business

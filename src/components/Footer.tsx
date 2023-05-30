@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import logo from '~/assets/logo.png';
 import { Book, Discord, Github, Linkedin, Medium, Paperplane, Twitter } from './socials';
 
 const Footer = () => {
@@ -13,7 +12,7 @@ const Footer = () => {
             ></div>
             <div className="container pb-10 pt-14">
                 <div className="flex flex-col items-center">
-                    <Image src={logo} alt="" />
+                    <Image src="/logo.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                     <div className="flex flex-wrap justify-center gap-2 mt-8 lg:gap-7">
                         <Link href="/" className="flex items-center justify-center h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-[#191C14]">
                             <Twitter />

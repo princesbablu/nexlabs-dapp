@@ -240,7 +240,7 @@ const Swap: NextPage = () => {
                                             </svg>
                                             <Image
                                                 src={close}
-                                                alt=""
+                                                alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}
                                                 className="w-6 h-[21.71px] absolute left-[5px] top-[6.14px] object-cover"
                                             />
                                             <div className="w-[15px] h-[15px] absolute left-2.5 top-2.5 overflow-hidden" />

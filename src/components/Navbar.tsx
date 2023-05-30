@@ -2,19 +2,6 @@ import { useState } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 
-import logo from '~/assets/logo.png';
-import curLogo from '~/assets/currency-logo.svg';
-import curLogo2 from '~/assets/currency-logo-2.png';
-import navIcon1 from '~/assets/nav-icon-1.svg';
-import navIcon2 from '~/assets/nav-icon-2.svg';
-import navIcon3 from '~/assets/nav-icon-3.svg';
-import navAngleRight from '~/assets/nav-angle-right.svg';
-
-import coinUsdc from '~/assets/coin-usdc.png';
-import coinEth from '~/assets/coin-eth.png';
-import coinBit from '~/assets/coin-bit.png';
-
-
 const Navbar = () => {
 
     const [toggleNav, setToggleNav] = useState(false);
@@ -45,7 +32,7 @@ const Navbar = () => {
                 <div className="flex items-center h-20 gap-8">
                     <div>
                         <Link href="/">
-                            <Image src={logo} alt="" priority />
+                            <Image src="/logo.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                         </Link>
                     </div>
 
@@ -68,39 +55,39 @@ const Navbar = () => {
                                     <li className="relative border-b border-[#69765D]/10 last:border-0">
                                         <Link href="/trade" className="flex items-center gap-3 px-5 py-3 text-white hover:text-[#6DAC4C] opacity-80 group">
                                             <span>
-                                                <Image src={navIcon1} alt="" priority />
+                                                <Image src="/nav-icon-1.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                             </span>
                                             <span className="block w-full">
                                                 Perpetual - Individual Assets
                                             </span>
                                             <span className="ml-auto">
-                                                <Image src={navAngleRight} alt="" priority />
+                                                <Image src="/nav-angle-right.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="relative border-b border-[#69765D]/10 last:border-0">
                                         <Link href="/trade" className="flex items-center gap-3 px-5 py-3 text-white hover:text-[#6DAC4C] opacity-80 group">
                                             <span>
-                                                <Image src={navIcon2} alt="" priority />
+                                                <Image src="/nav-icon-2.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                             </span>
                                             <span className="block w-full">
                                                 Perpetual - Indices
                                             </span>
                                             <span className="ml-auto">
-                                                <Image src={navAngleRight} alt="" priority />
+                                                <Image src="/nav-angle-right.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="relative border-b border-[#69765D]/10 last:border-0">
                                         <Link href="/trade" className="flex items-center gap-3 px-5 py-3 text-white hover:text-[#6DAC4C] opacity-80 group">
                                             <span>
-                                                <Image src={navIcon3} alt="" priority />
+                                                <Image src="/nav-icon-3.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                             </span>
                                             <span className="block w-full">
                                                 Futures - Prediction Markets
                                             </span>
                                             <span className="ml-auto">
-                                                <Image src={navAngleRight} alt="" priority />
+                                                <Image src="/nav-angle-right.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                             </span>
                                         </Link>
                                     </li>
@@ -207,7 +194,7 @@ const Navbar = () => {
                         </div>
                         <div className="bg-gradient-to-tl from-[#00ADEF] to-[#8AC640] p-px rounded-lg cursor-pointer hover:from-[#8ac640] hover:to-[#00adef] group shrink-0">
                             <div className="relative flex items-center justify-center gap-3 px-3 rounded-lg h-9 sm:h-11 bg-body sm:px-4">
-                                <Image src={curLogo} alt="" className='w-4 h-4 sm:h-6 sm:w-6' />
+                                <Image src="/currency-logo.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} className='w-4 h-4 sm:h-6 sm:w-6' />
 
                                 <div className="h-6 w-0.5 bg-[#171F10] hidden sm:block"></div>
 
@@ -236,7 +223,7 @@ const Navbar = () => {
                                     <li className="flex flex-col gap-2 py-2 border-b border-[#69765D]/20">
                                         <div className="flex justify-between items-center px-2 group/link hover:bg-[#12160E]">
                                             <div className="relative flex items-center justify-start gap-2">
-                                                <Image src={curLogo} alt="" />
+                                                <Image src="/currency-logo.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                                 <p className="flex-grow w-[67px] text-base font-medium text-left text-[#D8DBD5] group-hover/link:text-[#f6f9f3]">Arbitrum</p>
                                             </div>
 
@@ -246,7 +233,7 @@ const Navbar = () => {
                                         </div>
                                         <div className="flex justify-between items-center px-2 group/link hover:bg-[#12160E]">
                                             <div className="relative flex items-center justify-start gap-2">
-                                                <Image src={curLogo2} alt="" />
+                                                <Image src="/currency-logo-2.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                                                 <p className="flex-grow w-[67px] text-base font-medium text-left text-[#D8DBD5] group-hover/link:text-[#f6f9f3]">Avalanche</p>
                                             </div>
 

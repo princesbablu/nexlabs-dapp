@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-import logo1 from '~/assets/cur-nex-logo.png';
 
 const Selection = () => {
+    const logo1 = '/cur-nex-logo.png';
 
     const [text, setText] = useState("Nex");
     const [logo, setLogo] = useState(logo1);
@@ -14,7 +14,7 @@ const Selection = () => {
             <div className="relative" onClick={() => setDown(!down)}>
                 <div className="flex items-center gap-2.5 cursor-pointer">
                     <div>
-                        <Image src={logo1} alt="" />
+                        <Image src={logo1} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                     </div>
                     <div className="text-lg font-bold text-white">
                         {text}
@@ -38,7 +38,7 @@ const Selection = () => {
                 <div className={`absolute top-full left-0 w-40 p-4 bg-body rounded flex flex-col gap-3 ${down ? '' : 'hidden'}`}>
                     <div className="flex items-center gap-2.5 cursor-pointer" onClick={() => { setText("Nex 2"), setLogo(logo) }}>
                         <div>
-                            <Image src={logo} alt="" />
+                            <Image src={logo} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                         </div>
                         <div className="text-lg font-bold text-white">
                             Nex 2
@@ -46,7 +46,7 @@ const Selection = () => {
                     </div>
                     <div className="flex items-center gap-2.5 cursor-pointer" onClick={() => { setText("Nex 3"), setLogo(logo) }}>
                         <div>
-                            <Image src={logo} alt="" />
+                            <Image src={logo} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                         </div>
                         <div className="text-lg font-bold text-white">
                             Nex 3
@@ -54,7 +54,7 @@ const Selection = () => {
                     </div>
                     <div className="flex items-center gap-2.5 cursor-pointer" onClick={() => { setText("Nex 4"), setLogo(logo) }}>
                         <div>
-                            <Image src={logo} alt="" />
+                            <Image src={logo} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                         </div>
                         <div className="text-lg font-bold text-white">
                             Nex 4
@@ -62,7 +62,7 @@ const Selection = () => {
                     </div>
                     <div className="flex items-center gap-2.5 cursor-pointer" onClick={() => { setText("Nex 5"), setLogo(logo) }}>
                         <div>
-                            <Image src={logo} alt="" />
+                            <Image src={logo} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                         </div>
                         <div className="text-lg font-bold text-white">
                             Nex 5

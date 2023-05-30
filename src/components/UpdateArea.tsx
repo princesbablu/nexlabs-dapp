@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Image from 'next/image';
 
-import upDp from '~/assets/up-dp.png';
 import HomeChart from './charts/HomeChart';
 
 const UpdateArea = () => {
@@ -17,7 +16,7 @@ const UpdateArea = () => {
             <div className="lg:h-[150px] flex items-center px-7 py-8 rounded-xl bg-[#0B0F07]">
                 <div className="flex flex-wrap justify-between w-full">
                     <div className="flex items-center w-full gap-4 sm:w-1/2">
-                        <Image src={upDp} alt="" />
+                        <Image src="/up-dp.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
                         <div className="flex flex-col gap-2">
                             <div className="flex gap-4">
                                 <p className="text-xl font-medium text-[#d8dbd5]">
