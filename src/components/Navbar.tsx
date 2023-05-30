@@ -32,7 +32,7 @@ const Navbar = () => {
                 <div className="flex items-center h-20 gap-8">
                     <div>
                         <Link href="/">
-                            <Image src="/logo.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                            <Image src="/logo.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minHeight: '20px', minWidth: '40px' }} />
                         </Link>
                     </div>
 

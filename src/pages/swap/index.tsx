@@ -3,8 +3,6 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { type NextPage } from 'next';
 
-import close from '~/assets/icon-close.png';
-
 import Footer from '../../components/Footer';
 
 const Swap: NextPage = () => {
