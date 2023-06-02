@@ -390,7 +390,6 @@ const TradePage: NextPage = () => {
                             </div>
                             <div className="px-4 py-8 overflow-auto">
                                 {tableToggle === "1" ? <PositionTable /> : <HistoryTable />}
-
                             </div>
                         </div>
                     </div>

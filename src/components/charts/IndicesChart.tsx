@@ -4,10 +4,6 @@ const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 import { ApexOptions } from 'apexcharts';
 
-import cbit from '~/assets/c-bit.png';
-import ct from '~/assets/c-t.png';
-import cpriz from '~/assets/c-priz.png';
-
 const ReportChart: React.FC = () => {
   const options: ApexOptions = {
     chart: {
@@ -19,6 +15,9 @@ const ReportChart: React.FC = () => {
     },
     theme: {
       mode: 'dark'
+    },
+    dataLabels: {
+      enabled: false
     },
     xaxis: {
       labels: {
@@ -38,7 +37,8 @@ const ReportChart: React.FC = () => {
     },
     stroke: {
       curve: 'smooth',
-      width: 2
+      width: 2,
+      colors: ['#8AC640']
     },
     grid: {
       xaxis: {
@@ -56,13 +56,25 @@ const ReportChart: React.FC = () => {
       type: 'gradient',
       gradient: {
         shade: 'light',
-        type: 'horizontal',
+        type: 'vertical',
         shadeIntensity: 1,
-        gradientToColors: ['#8AC640', '#00ADEF'],
+        gradientToColors: ['#8AC640'],
         inverseColors: false,
         opacityFrom: 1,
         opacityTo: 1,
-        stops: [0, 100]
+        stops: [0, 100, 100],
+        colorStops: [
+          {
+            offset: 0,
+            color: '#47B262',
+            opacity: 25
+          },
+          {
+            offset: 100,
+            color: '#374B23',
+            opacity: 0
+          },
+        ],
       },
     },
     tooltip: {
@@ -77,17 +89,17 @@ const ReportChart: React.FC = () => {
   const series = [
     {
       name: 'Alpha',
-      data: [40, 30, 45, 35, 55, 40, 50, 25, 45, 35]
+      data: [40, 30, 45, 35, 55, 40, 50, 35, 45, 35, 44, 33, 40, 50, 38, 45, 35]
     }
   ]
 
   return (
     <Chart
-      type="line"
+      type="area"
       options={options}
       series={series}
       width="100%"
-      height={230}
+      height={240}
     />
   );
 }
@@ -95,16 +107,15 @@ const ReportChart: React.FC = () => {
 
 const IndicesChart = () => {
   return (
-    <div className="h-[260px] w-full relative overflow-hidden rounded-lg z-10">
-      <div className="relative z-10">
+    <div className="h-[260px] w-full relative overflow-hidden rounded-lg z-10"
+      style={{ background: "linear-gradient(221.27deg, rgba(55,75,35,0.75) 5.16%, rgba(55,75,35,0.35) 97.57%)" }}
+    >
+      <div className="relative z-10 -ml-5 -mr-2.5">
         <ReportChart />
       </div>
 
 
-      <div
-        className="absolute top-0 left-0 h-full w-full rounded-[inherit] flex flex-col p-3"
-        style={{ background: "linear-gradient(221.27deg, rgba(55,75,35,0.75) 5.16%, rgba(55,75,35,0.35) 97.57%)" }}
-      >
+      <div className="absolute top-0 left-0 h-full w-full rounded-[inherit] flex flex-col p-3 z-10 pointer-events-none">
         <p className="text-lg font-bold text-[#f6f9f3]">
           All Weather Alpha Please
         </p>
@@ -116,19 +127,19 @@ const IndicesChart = () => {
             </p>
           </div>
           <div className="flex items-start justify-start gap-1">
-            <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-1 pl-0.5 pr-[5px] py-0.5 rounded-[40px] bg-[#7dc350]/30">
-              <Image className="flex-grow-0 flex-shrink-0" src="/c-bit.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+            <div className="flex justify-start items-center  relative gap-1 pl-0.5 pr-[5px] py-0.5 rounded-[40px] bg-[#7dc350]/30">
+              <Image src="/c-bit.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minWidth: '12px' }} />
               <p className="text-[10px] font-medium text-center text-[#d8dbd5]">5%</p>
             </div>
-            <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-1 pl-0.5 pr-[5px] py-0.5 rounded-[40px] bg-[#7dc350]/30">
-              <Image className="flex-grow-0 flex-shrink-0" src="/c-t.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+            <div className="flex justify-start items-center  relative gap-1 pl-0.5 pr-[5px] py-0.5 rounded-[40px] bg-[#7dc350]/30">
+              <Image src="/c-t.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minWidth: '12px' }} />
               <p className="text-[10px] font-medium text-center text-[#d8dbd5]">5%</p>
             </div>
-            <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-1 pl-0.5 pr-[5px] py-0.5 rounded-[40px] bg-[#7dc350]/30">
-              <Image className="flex-grow-0 flex-shrink-0" src="/c-priz.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+            <div className="flex justify-center items-center  relative gap-1 pl-0.5 pr-[5px] py-0.5 rounded-[40px] bg-[#7dc350]/30">
+              <Image src="/c-priz.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minWidth: '12px' }} />
               <p className="text-[10px] font-medium text-center text-[#d8dbd5]">7%</p>
             </div>
-            <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-1 px-1 py-0.5 rounded-[40px] bg-[#7dc350]/30">
+            <div className="flex justify-center items-center  relative gap-1 px-1 py-0.5 rounded-[40px] bg-[#7dc350]/30">
               <p className="text-[10px] font-medium text-center text-[#d8dbd5]">+7</p>
             </div>
           </div>

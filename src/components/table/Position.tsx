@@ -19,7 +19,7 @@ const PositionTable = () => {
                     <tr>
                         <td colSpan={7}>
                             <div className="flex justify-center h-full py-20">
-                                <Image src="/empty-data.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                <Image src="/empty-data.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minWidth: '100px' }} />
                             </div>
                         </td>
                     </tr>

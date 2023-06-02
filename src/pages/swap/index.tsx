@@ -237,9 +237,9 @@ const Swap: NextPage = () => {
                                                 <circle cx={18} cy="17.5" r="17.5" fill="#12160E" />
                                             </svg>
                                             <Image
-                                                src={close}
-                                                alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }}
-                                                className="w-6 h-[21.71px] absolute left-[5px] top-[6.14px] object-cover"
+                                                src="/icon-close.png"
+                                                alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minWidth: '24px' }}
+                                                className="w-6 h-[21.71px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover"
                                             />
                                             <div className="w-[15px] h-[15px] absolute left-2.5 top-2.5 overflow-hidden" />
                                         </div>
@@ -349,9 +349,9 @@ const Swap: NextPage = () => {
                                                 <circle cx="17.5" cy="17.5" r="17.5" fill="#12160E" />
                                             </svg>
                                             <Image
-                                                src={close}
-                                                alt=""
-                                                className="w-6 h-[21.71px] absolute left-[5px] top-[6.14px] object-cover"
+                                                src="/icon-close.png"
+                                                alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minWidth: '24px' }}
+                                                className="w-6 h-[21.71px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover"
                                             />
                                             <div className="w-[15px] h-[15px] absolute left-2.5 top-2.5 overflow-hidden" />
                                         </div>

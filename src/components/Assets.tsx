@@ -187,7 +187,7 @@ const Assets = () => {
                                         <div className="hover:bg-gradient-to-tl bg-[#0B0F07] from-[#00ADEF] to-[#8AC640] p-px rounded-lg hover:from-[#8ac640] hover:to-[#00adef]">
                                             <div className="min-h-[317px] rounded-lg bg-[#0B0F07] w-full pt-14 pb-8 flex flex-col items-center">
                                                 <div className="w-14 h-14 rounded bg-[#1b1f17] flex items-center justify-center mb-4">
-                                                    <Image src={el.icon} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                                    <Image src={el.icon} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minWidth: '30px' }} />
                                                 </div>
                                                 <p className="text-xl font-bold text-center text-[#f6f9f3] mb-1">{el.title}</p>
                                                 <p className="opacity-70 text-sm text-center text-[#d8dbd5] mb-3">{el.sub}</p>
@@ -282,7 +282,7 @@ const Assets = () => {
                                         <div className="hover:bg-gradient-to-tl bg-[#0B0F07] from-[#00ADEF] to-[#8AC640] p-px rounded-lg hover:from-[#8ac640] hover:to-[#00adef]">
                                             <div className="min-h-[317px] rounded-lg bg-[#0B0F07] w-full pt-14 pb-8 flex flex-col items-center">
                                                 <div className="w-14 h-14 rounded bg-[#1b1f17] flex items-center justify-center mb-4">
-                                                    <Image src={el.icon} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                                    <Image src={el.icon} alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minWidth: '30px' }} />
                                                 </div>
                                                 <p className="text-xl font-bold text-center text-[#f6f9f3] mb-1">{el.title}</p>
                                                 <p className="opacity-70 text-sm text-center text-[#d8dbd5] mb-3">{el.sub}</p>

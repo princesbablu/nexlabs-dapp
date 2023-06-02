@@ -51,7 +51,7 @@ const Analytics: NextPage = () => {
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src="/analytics/icon-asset-1.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                    <Image src="/analytics/icon-asset-1.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minHeight: '22px' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -67,7 +67,7 @@ const Analytics: NextPage = () => {
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src="/analytics/icon-asset-2.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                    <Image src="/analytics/icon-asset-2.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minHeight: '22px' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -81,7 +81,7 @@ const Analytics: NextPage = () => {
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src="/analytics/icon-asset-3.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                    <Image src="/analytics/icon-asset-3.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minHeight: '22px' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -95,7 +95,7 @@ const Analytics: NextPage = () => {
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src="/analytics/icon-asset-4.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                    <Image src="/analytics/icon-asset-4.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minHeight: '22px' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -109,7 +109,7 @@ const Analytics: NextPage = () => {
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src="/analytics/icon-asset-5.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                    <Image src="/analytics/icon-asset-5.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minHeight: '22px' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -123,7 +123,7 @@ const Analytics: NextPage = () => {
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src="/analytics/icon-asset-6.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                    <Image src="/analytics/icon-asset-6.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minHeight: '22px' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -137,7 +137,7 @@ const Analytics: NextPage = () => {
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src="/analytics/icon-asset-7.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                    <Image src="/analytics/icon-asset-7.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minHeight: '22px' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -151,7 +151,7 @@ const Analytics: NextPage = () => {
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src="/analytics/icon-asset-8.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                    <Image src="/analytics/icon-asset-8.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minHeight: '22px' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">
@@ -165,7 +165,7 @@ const Analytics: NextPage = () => {
                         <div className="w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] xl:w-[calc(20%-40px)]">
                             <div className="relative flex items-center justify-start w-full gap-3">
                                 <div className="w-12 h-12 rounded relative bg-[#171b13] flex items-center justify-center flex-shrink-0">
-                                    <Image src="/analytics/icon-asset-9.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
+                                    <Image src="/analytics/icon-asset-9.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto', minHeight: '22px' }} />
                                 </div>
                                 <div className="relative flex flex-col items-start justify-start gap-1">
                                     <div className="relative flex items-end self-stretch justify-start gap-2">

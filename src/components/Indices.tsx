@@ -12,7 +12,7 @@ const Indices = () => {
                 <div className="container">
                     <div className="flex flex-wrap items-center justify-between gap-5 mb-12">
                         <div>
-                            <p className="text-[40px] font-bold text-[#f6f9f3]">Indices</p>
+                            <p className="text-2xl md:text-3xl lg:text-[40px] font-bold text-[#f6f9f3]">Indices</p>
                         </div>
                         <div>
                             <div className="flex flex-col justify-center items-center w-[268px] gap-2 px-4 py-2.5 rounded bg-[#0b0f07]">
@@ -124,7 +124,7 @@ const Indices = () => {
                 <div className="container">
                     <div className="flex flex-wrap items-center justify-between gap-5 mb-12">
                         <div>
-                            <p className="text-[40px] font-bold text-[#f6f9f3]">Individual Assets</p>
+                            <p className="text-2xl md:text-3xl lg:text-[40px] font-bold text-[#f6f9f3]">Individual Assets</p>
                         </div>
                         <div>
                             <div className="flex flex-col justify-center items-center w-[268px] gap-2 px-4 py-2.5 rounded bg-[#0b0f07]">
