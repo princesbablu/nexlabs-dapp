@@ -1,14 +1,16 @@
-import Image from 'next/image';
-
-import IndicesChart from './charts/IndicesChart'
+import IndicesChart1 from './charts/indices/Chart1';
+import IndicesChart2 from './charts/indices/Chart2';
+import IndicesChart3 from './charts/indices/Chart3';
+import IndicesChart4 from './charts/indices/Chart4';
+import IndicesChart5 from './charts/indices/Chart5';
+import IndicesChart6 from './charts/indices/Chart6';
+import IndicesChart7 from './charts/indices/Chart7';
+import IndicesChart8 from './charts/indices/Chart8';
 
 const Indices = () => {
     return (
         <>
             <div className="relative z-10 mt-12">
-                <div className="absolute right-0 top-1/2 -z-10">
-                    <Image src="/blur/blur-indices.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
-                </div>
                 <div className="container">
                     <div className="flex flex-wrap items-center justify-between gap-5 mb-12">
                         <div>
@@ -65,16 +67,16 @@ const Indices = () => {
 
                             <div className="flex flex-wrap gap-6 mt-[30px]">
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart1 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart2 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart3 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart4 />
                                 </div>
                             </div>
                         </div>
@@ -103,16 +105,16 @@ const Indices = () => {
 
                             <div className="flex flex-wrap gap-6 mt-[30px]">
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart5 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart6 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart7 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart8 />
                                 </div>
                             </div>
                         </div>
@@ -177,16 +179,16 @@ const Indices = () => {
 
                             <div className="flex flex-wrap gap-6 mt-[30px]">
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart1 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart2 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart3 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart4 />
                                 </div>
                             </div>
                         </div>
@@ -215,16 +217,16 @@ const Indices = () => {
 
                             <div className="flex flex-wrap gap-6 mt-[30px]">
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart5 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart6 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart7 />
                                 </div>
                                 <div className="w-full md:w-[calc(50%-12px)] lg:w-full xl:w-[calc(50%-12px)]">
-                                    <IndicesChart />
+                                    <IndicesChart8 />
                                 </div>
                             </div>
                         </div>

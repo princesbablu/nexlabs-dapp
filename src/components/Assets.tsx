@@ -109,9 +109,6 @@ const listOfPre = [
 const Assets = () => {
     return (
         <div className="relative z-10 overflow-hidden">
-            <div className="absolute top-0 left-0 -z-10">
-                <Image src="/blur/blur-asset.png" alt="" width={0} height={0} sizes="100vw" style={{ width: 'auto', height: 'auto' }} />
-            </div>
             <div className="container relative z-10">
                 <div className="flex items-center justify-between pt-[60px] mb-10">
                     <p className="text-xl md:text-3xl lg:text-[40px] font-bold text-[#f6f9f3]">
